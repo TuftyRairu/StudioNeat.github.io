@@ -1,0 +1,280 @@
+.navbar {
+  width: 100%;
+  background-color: #f4f1ea;
+  display: flex;
+  flex-direction: row;
+}
+.navbar .logo_part {
+  display: flex;
+  flex-direction: row;
+  padding: 5.2vh 0 3.5vh 0;
+  width: 50vw;
+}
+.navbar .logo_part .logo_container {
+  width: 100%;
+  display: flex;
+}
+.navbar .logo_part .logo_container .logo {
+  display: inline-block;
+  background-size: cover;
+}
+.navbar .logo_part .logo_container .img {
+  background-image: url("Images/SNMonogram.svg");
+  height: 2.8em;
+  width: 2.8em;
+  margin-left: 10.5vw;
+}
+.navbar .logo_part .logo_container .name {
+  background-image: url("Images/SNLogotype.svg");
+  margin: 0.6vh 0 0 1vw;
+  height: 2.5em;
+  width: 9.7em;
+}
+.navbar .pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 50vw;
+  padding: 6vh 0 3.5vh 0;
+}
+.navbar .pages div {
+  padding: 2vh 0;
+  margin-right: 3vw;
+}
+.navbar .pages div a {
+  white-space: nowrap;
+  font-size: 1.1em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-family: "Teko", sans-serif;
+  text-decoration: none;
+  color: #5b5b5b;
+}
+.navbar .pages .dropdwn_p {
+  position: relative;
+}
+.navbar .pages .dropdwn_p .dropdwn_pmenu {
+  white-space: nowrap;
+  position: absolute;
+  width: 23vw;
+  left: -1.5em;
+  top: 100%;
+  padding: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+.navbar .pages .dropdwn_p .dropdwn_pmenu .menu {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color: white;
+}
+.navbar .pages .dropdwn_p .dropdwn_pmenu .menu a {
+  color: black;
+  font-size: 0.8em;
+  padding: 0 0 0 1vh;
+  display: flex;
+  flex-direction: row;
+  font-family: "Signiko Negative", sans-serif;
+}
+.navbar .pages .dropdwn_p .dropdwn_pmenu .menu a .left {
+  margin: 2vh 0.5vw 4vh 0;
+  padding: 0;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+}
+.navbar .pages .dropdwn_p .dropdwn_pmenu .menu a .right {
+  margin: 1.5vh 1vw 0 0;
+  padding: 0;
+  width: 5.5vw;
+  height: 6.5vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 90%;
+  border: solid 2px lightgrey;
+}
+.navbar .pages .dropdwn_p .dropdwn_pmenu .menu a .first {
+  background-image: url("Images/MarkOneOverview_large.webp");
+}
+.navbar .pages .dropdwn_p .dropdwn_pmenu .menu a .second {
+  background-image: url("Images/MK2OverviewSilverweb_large.webp");
+}
+.navbar .pages .dropdwn_p .dropdwn_pmenu .menu a .third {
+  background-image: url("Images/TDOCKOverviewEmpty_7c59d0dc-3f35-41de-82e4-1fa542d17232_large.webp");
+}
+.navbar .pages .dropdwn_p .dropdwn_pmenu .menu a .fourth {
+  background-image: url("Images/Top-CoverDetail_grande_6d0c6393-0006-43d8-983c-88c4a9008f02_large.jpg");
+}
+.navbar .pages .dropdwn_p .dropdwn_pmenu .menu:hover {
+  background-color: rgb(245, 245, 245);
+}
+.navbar .pages .dropdwn_p > .p_link:focus + .dropdwn_pmenu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 96vh;
+  background-image: url("Images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.header .prod_txt {
+  margin-top: 63vh;
+  display: flex;
+  justify-content: center;
+}
+.header .prod_txt h1 {
+  font-family: "Teko", Arial, sans-serif;
+  text-align: center;
+  font-size: 3em;
+  color: #5b5b5b;
+  line-height: 1.1em;
+}
+.header .prod_button {
+  border-radius: 6px;
+  height: 9vh;
+  margin: 0 34.5vw;
+  background-color: #034752;
+  display: flex;
+  justify-content: center;
+}
+.header .prod_button a {
+  text-decoration: none;
+  font-weight: 800;
+  padding: 2.5vh 0 0 0;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 70%;
+  font-family: "Signiko Negative", sans-serif;
+}
+.header .prod_button:hover {
+  background-color: #023b44;
+}
+
+.first_body {
+  height: 500vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f1ea;
+}
+.first_body .text_top h3 {
+  text-align: center;
+  margin: 6vh 0;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-style: italic;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  color: #414042;
+}
+.first_body .line {
+  border-top: solid 1px #414042;
+  margin: 0.3vh 43vw 5vh 43vw;
+}
+.first_body .first_container {
+  display: flex;
+  flex-direction: row;
+}
+.first_body .first_container .left {
+  margin: 1vh 2vw 1vh 11vw;
+  display: flex;
+  flex-direction: column;
+}
+.first_body .first_container .left .lm_link {
+  border-radius: 90%;
+  border: 8px solid lightgrey;
+}
+.first_body .first_container .left .lm_link .left_img {
+  background-image: url("Images/MarkOneOverview_large.webp");
+  background-size: cover;
+  background-position: center;
+  width: 22.3vw;
+  height: 47vh;
+  border-radius: 90%;
+}
+.first_body .first_container .left .lm_link:hover {
+  border: 8px solid rgb(189, 189, 189);
+}
+.first_body .first_container .left .left_name {
+  margin: 1.5vh 0;
+  text-align: center;
+}
+.first_body .first_container .left .left_name a {
+  text-decoration: none;
+  color: #414042;
+  font-size: 1.5em;
+}
+.first_body .first_container .left .left_name a:hover {
+  color: #39383a;
+  text-decoration: underline;
+}
+.first_body .first_container .left .left_line {
+  border-bottom: 1px solid #414042;
+  margin: 0 10vw;
+}
+.first_body .first_container .left .left_desc {
+  margin: 1.5vh 0;
+  text-align: center;
+}
+.first_body .first_container .mid {
+  margin: 1vh 2vw;
+  display: flex;
+  flex-direction: column;
+}
+.first_body .first_container .mid .mm_link {
+  border-radius: 90%;
+  border: 8px solid lightgrey;
+}
+.first_body .first_container .mid .mm_link .mid_img {
+  background-image: url("Images/MK2OverviewSilverweb_large.webp");
+  background-size: cover;
+  background-position: center;
+  width: 22.3vw;
+  height: 47vh;
+  border-radius: 90%;
+}
+.first_body .first_container .mid .mm_link:hover {
+  border: 8px solid rgb(189, 189, 189);
+}
+.first_body .first_container .mid .mid_name {
+  margin: 1.5vh 0;
+  text-align: center;
+}
+.first_body .first_container .mid .mid_name a {
+  text-decoration: none;
+  color: #414042;
+  font-size: 1.5em;
+}
+.first_body .first_container .mid .mid_name a:hover {
+  color: #39383a;
+  text-decoration: underline;
+}
+.first_body .first_container .mid .mid_line {
+  border-bottom: 1px solid #414042;
+  margin: 0 10vw;
+}
+.first_body .first_container .mid .mid_desc {
+  margin: 1.5vh 0;
+  text-align: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=styles.css.map */

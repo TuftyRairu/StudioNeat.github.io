@@ -1,0 +1,138 @@
+.navbar {
+    width: 100%;
+    background-color: #f4f1ea;
+    display: flex;
+    flex-direction: row;
+
+    .logo_part {
+        display: flex;
+        flex-direction: row;
+        padding: 5.2vh 0 3.5vh 0;
+        width: 50vw;
+
+        .logo_container {
+            width: 100%;
+            display: flex;
+
+            .logo {
+                display: inline-block;
+                background-size: cover;
+            }
+
+            .img {
+                background-image: url('Images/SNMonogram.svg');
+                height: 2.8em;
+                width: 2.8em;
+                margin-left: 10.5vw;
+            }
+
+            .name {
+                background-image: url('Images/SNLogotype.svg');
+                margin: .6vh 0 0 1vw;
+                height: 2.5em;
+                width: 9.7em;
+            }
+        }
+    }
+
+    .pages {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 50vw;
+        padding: 6vh 0 3.5vh 0;
+
+        div {
+            padding: 2vh 0;
+            margin-right: 3vw;
+
+            a {
+                white-space: nowrap;
+                font-size: 1.1em;
+                font-weight: 800;
+                letter-spacing: 2px;
+                font-family: 'Teko', sans-serif;
+                text-decoration: none;
+                color: #5b5b5b;
+            }
+        }
+
+        .dropdwn_p {
+            position: relative;
+
+            .dropdwn_pmenu {
+                white-space: nowrap;
+                position: absolute;
+                width:23vw;
+                left: -1.5em;
+                top:100%;
+                padding: 0;
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+                opacity: 0;
+                pointer-events: none;
+                transform: translateY(-10px);
+                transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+
+                .menu {
+                    width: 100%;
+                    height: 100%;
+                    padding: 0;
+                    background-color: white;
+
+                    a {
+                        color: black;
+                        font-size: .8em;
+                        padding: 0 0 0 1vh;
+                        display: flex;
+                        flex-direction: row;
+                        font-family: 'Signiko Negative', sans-serif;
+
+                        .left{
+                            margin: 2vh .5vw 4vh 0;
+                            padding: 0;
+                            width: 25vw;
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        .right {
+                            margin: 1.5vh 1vw 0 0;
+                            padding: 0;
+                            width: 5.5vw;
+                            height: 6.5vh;
+                            background-size: cover;
+                            background-position: center;
+                            border-radius: 90%;
+                            border: solid 2px lightgrey;
+                        }
+
+                        .first {
+                            background-image: url('Images/MarkOneOverview_large.webp');
+                        }
+
+                        .second {
+                            background-image: url('Images/MK2OverviewSilverweb_large.webp');
+                        }
+
+                        .third {
+                            background-image: url('Images/TDOCKOverviewEmpty_7c59d0dc-3f35-41de-82e4-1fa542d17232_large.webp');
+                        }
+
+                        .fourth {
+                            background-image: url('Images/Top-CoverDetail_grande_6d0c6393-0006-43d8-983c-88c4a9008f02_large.jpg');
+                        }
+                    }
+                }
+
+                .menu:hover {
+                    background-color: rgb(245, 245, 245);
+                }
+            }
+        }
+
+        .dropdwn_p > .p_link:focus + .dropdwn_pmenu {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+    }
+}
